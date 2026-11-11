@@ -1,0 +1,15 @@
+# Receita para o Render criar o teu site (grátis). Não mexas.
+services:
+  - type: web
+    name: mesa-de-robos
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm install --no-audit --no-fund
+    startCommand: node server.js
+    healthCheckPath: /saude
+    envVars:
+      - key: RELAY_PASSWORD
+        sync: false
+      - key: RELAY_KEY
+        sync: false

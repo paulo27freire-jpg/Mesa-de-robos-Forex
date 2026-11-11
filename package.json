@@ -1,0 +1,9 @@
+{
+  "name": "mesa-de-robos-site",
+  "version": "1.0.0",
+  "description": "Site da Mesa de Robos: ponte com o PC + robos do ouro a trabalhar 24h + investigacao de outros mercados.",
+  "private": true,
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}
